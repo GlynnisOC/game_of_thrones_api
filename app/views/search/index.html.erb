@@ -1,0 +1,8 @@
+<%= facade.family_members_count %> Members
+
+<% facade.family_members.each do |fam| %>
+    <ul class="member">
+      <li class="name"><%= fam.name %></li>
+    <li class="id"><%= fam.id %></li>
+  </ul>
+<% end %>
