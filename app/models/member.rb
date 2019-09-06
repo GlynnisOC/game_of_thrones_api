@@ -2,7 +2,7 @@ class Member
   attr_reader :name, :id
 
   def initialize(attrs = {})
-    @name = attrs.last.first[:attributes][:members].each { |attr| attr[:name]}
-    @id = attrs.last.first[:attributes][:members].each { |attr| attr[:id]}
+    @name = attrs[:name]
+    @id = attrs[:id]
   end
 end
